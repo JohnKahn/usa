@@ -1,0 +1,115 @@
+.md-input-group {
+  position: relative;
+}
+.md-input-group input {
+  font-size: 18px;
+  padding: 10px 10px 10px 5px;
+  display: block;
+  width: 100%;
+  border: none;
+  border-bottom: 1px solid #757575;
+}
+.md-input-group input:focus {
+  outline: none;
+}
+
+/* LABEL ======================================= */
+.md-input-group label {
+  color: #999;
+  font-size: 18px;
+  font-weight: normal;
+  position: absolute;
+  pointer-events: none;
+  left: 5px;
+  top: 10px;
+  transition: 0.2s ease all;
+  -moz-transition: 0.2s ease all;
+  -webkit-transition: 0.2s ease all;
+}
+
+/* active state */
+.md-input-group input:focus ~ label,
+.md-input-group input:valid ~ label {
+  top: -20px;
+  font-size: 14px;
+  color: #357edd;
+}
+
+/* BOTTOM BARS ================================= */
+.md-input-group .bar {
+  position: relative;
+  display: block;
+  width: calc(100% + 1px);
+  left: -1px;
+}
+.md-input-group .bar:before,
+.md-input-group .bar:after {
+  content: '';
+  height: 3px;
+  width: 0;
+  bottom: 0px;
+  position: absolute;
+  background: #357edd;
+  transition: 0.2s ease all;
+  -moz-transition: 0.2s ease all;
+  -webkit-transition: 0.2s ease all;
+}
+.md-input-group .bar:before {
+  left: 50%;
+}
+.md-input-group .bar:after {
+  right: 50%;
+}
+
+/* active state */
+.md-input-group input:focus ~ .bar:before,
+.md-input-group input:focus ~ .bar:after {
+  width: 50%;
+}
+
+/* HIGHLIGHTER ================================== */
+.md-input-group .highlight {
+  position: absolute;
+  height: 60%;
+  width: 100px;
+  top: 25%;
+  left: 0;
+  pointer-events: none;
+  opacity: 0.5;
+}
+
+/* active state */
+.md-input-group input:focus ~ .highlight {
+  -webkit-animation: inputHighlighter 0.3s ease;
+  -moz-animation: inputHighlighter 0.3s ease;
+  animation: inputHighlighter 0.3s ease;
+}
+
+/* ANIMATIONS ================ */
+@-webkit-keyframes inputHighlighter {
+  from {
+    background: #357edd;
+  }
+  to {
+    width: 0;
+    background: transparent;
+  }
+}
+@-moz-keyframes inputHighlighter {
+  from {
+    background: #357edd;
+  }
+  to {
+    width: 0;
+    background: transparent;
+  }
+}
+@keyframes inputHighlighter {
+  from {
+    background: #357edd;
+  }
+  to {
+    width: 0;
+    background: transparent;
+  }
+}

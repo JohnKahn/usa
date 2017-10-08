@@ -1,0 +1,11 @@
+footer {
+  border-top: 1px solid rgba(0, 0, 0, 0.15);
+}
+
+footer a {
+  color: rgb(153, 153, 153);
+}
+
+footer a:hover {
+  color: #357edd;
+}
