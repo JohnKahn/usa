@@ -1,0 +1,51 @@
+/*
+Theme Name: Venture
+Author: John Kahn for Grupacity
+Author URI: http://grupacity.com/
+Description: Venture is a theme based on the Google Venture site
+Version: 1.0
+License: GNU General Public License v2 or later
+License URI: http://www.gnu.org/licenses/gpl-2.0.html
+Text Domain: venture
+Tags: one-column, two-columns, right-sidebar, flexible-header, accessibility-ready, custom-colors, custom-header, custom-menu, custom-logo, editor-style, featured-images, footer-widgets, post-formats, rtl-language-support, sticky-post, theme-options, threaded-comments, translation-ready
+*/
+
+html {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+}
+
+body {
+  min-height: 100%;
+  position: relative;
+}
+
+#main {
+  min-height: 100%;
+  position: relative;
+}
+
+.slick-slide {
+  height: inherit;
+}
+
+hr {
+  border: none;
+  border-top: 1px solid rgba(0, 0, 0, 0.15);
+  margin: 0;
+}
+
+.newsletter-email-input {
+  border-style: none;
+  border-bottom-style: solid;
+  border-width: 2px;
+  border-color: black;
+  outline: none;
+  transition: 200ms all;
+}
+
+.newsletter-email-input:focus {
+  border-width: 4px;
+  border-color: #357edd;
+}
