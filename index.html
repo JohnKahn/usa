@@ -1,5 +1,4 @@
 <html>
-    
     <head>
       <title>Tutorial theme</title>
       <link rel="stylesheet" href="css/animate.css" />
@@ -11,9 +10,7 @@
       <link rel="stylesheet" href="css/materialdesign-input.css" />
       <link rel="stylesheet" href="css/nav.css" />
       <link rel="stylesheet" href="css/footer.css" />
-    
     </head>
-    
     <body class="sans-serif bg-white">
       <div id="main">
         <nav class="main-nav">
@@ -22,70 +19,69 @@
             <nav class="dib v-top">
               <ul class="list pl0 ma0">
                 <li class="dib">
-                  <a href="#">Home</a>
+                  <a href="index.html">Home</a>
                 </li>
                 <li class="dib">
-                  <a href="#">About</a>
-                </li>
-                <li class="dib">
-                  <a href="#">Team</a>
+                  <a href="about.html">About Us</a>
                 </li>
               </ul>
             </nav>
           </div>
         </nav>
         <div class="w-100 w-60-l center mt6 mb3 ph2">
-          <div class="fl w-100 w-50-l fadeInUp animated mb4">
-            <h1 class="f1 ma0">
-              We provide businesses
-              <span id="slick-1">
-                <span class="blue f2 dn">Industry-leading quality</span>
-                <span class="blue f2 dn">Fair and honest pricing</span>
-                <span class="blue f2 dn">A worry-free experience</span>
-              </span>
-            </h1>
-            <div id="slick-2">
-              <div class="f4 mv1 tl">
-                <p class="measure">
-                  “At Dominos, quality and value are two things we strive to provide. They are also expectations we have for our service partners
-                  such as USA Restaurant Services. Brian and his group have always delivered on both.”
-                </p>
-                <div class="mt3">
-                  <div class="dib v-mid">
-                    <h2 class="f3 fw5 ma0">Jerald P.</h2>
-                    <p class="f4 ma0">Dominos Pizza</p>
+          <div class="w-100 mb5 fadeInUp animated">
+            <div class="fl w-100 w-50-l mb4">
+              <h1 class="f2 ma0">
+                We provide businesses
+                <span id="slick-1">
+                  <span class="blue dn">Industry-leading quality</span>
+                  <span class="blue dn">Fair and honest pricing</span>
+                  <span class="blue dn">A worry-free experience</span>
+                </span>
+              </h1>
+              <div id="slick-2">
+                <div class="f4 mv1 tl">
+                  <p class="measure">
+                    “At Dominos, quality and value are two things we strive to provide. They are also expectations we have for our service partners
+                    such as USA Restaurant Services. Brian and his group have always delivered on both.”
+                  </p>
+                  <div class="mt3">
+                    <div class="dib v-mid">
+                      <h2 class="f3 fw5 ma0">Jerald P.</h2>
+                      <p class="f4 ma0">Dominos Pizza</p>
+                    </div>
                   </div>
                 </div>
-              </div>
-              <div class="f4 mv1 tl">
-                <p class="measure">“With their à la carte fixed prices and passion for forming long-lasting relationships, I know I can breathe
-                  easy thanks to USA Restaurant Services.”</p>
-                <div class="mt3">
-                  <div class="dib v-mid">
-                    <h2 class="f3 fw5 ma0">Scott W.</h2>
-                    <p class="f4 ma0">Taco Bell</p>
+                <div class="f4 mv1 tl">
+                  <p class="measure">“With their à la carte fixed prices and passion for forming long-lasting relationships, I know I can breathe
+                    easy thanks to USA Restaurant Services.”</p>
+                  <div class="mt3">
+                    <div class="dib v-mid">
+                      <h2 class="f3 fw5 ma0">Scott W.</h2>
+                      <p class="f4 ma0">Taco Bell</p>
+                    </div>
                   </div>
                 </div>
-              </div>
-              <div class="f4 mv1 tl">
-                <p class="measure">“As a second generation company, we sometimes get the runaround from multiple companies when we need maintenance.
-                  With USA Restaurant Services and their full-service operation, we no longer have to worry about repairs and
-                  can focus on serving our growing customer base.</p>
-                <div class="mt3">
-                  <div class="dib v-mid">
-                    <h2 class="f3 fw5 ma0">Adam T.</h2>
-                    <p class="f4 ma0">Ascension</p>
+                <div class="f4 mv1 tl">
+                  <p class="measure">“As a second generation company, we sometimes get the runaround from multiple companies when we need maintenance.
+                    With USA Restaurant Services and their full-service operation, we no longer have to worry about repairs and
+                    can focus on serving our growing customer base.</p>
+                  <div class="mt3">
+                    <div class="dib v-mid">
+                      <h2 class="f3 fw5 ma0">Adam T.</h2>
+                      <p class="f4 ma0">Ascension</p>
+                    </div>
                   </div>
                 </div>
               </div>
             </div>
-          </div>
-          <div class="fl dn db-l w-50 tc">
-            <div class="w-80 center">
-              <div id="slick-3">
-                <img src="images/pizza.jpg" />
-                <img src="images/tacos.jpg" />
-                <img src="images/breakfast.jpg" />
+            <div class="fl dn db-l w-50 tc">
+              <div class="w-80 center">
+                <div id="slick-3">
+                  <img src="images/pizza.jpg" />
+                  <img src="images/tacos.jpg" />
+                  <img src="images/breakfast.jpg" />
+                </div>
               </div>
             </div>
           </div>
@@ -160,16 +156,6 @@
         jQuery(document).ready(function ($) {
           $('#slick-1').slick({
             accessibility: false,
-            autoplay: true,
-            autoplaySpeed: 8000,
-            arrows: false,
-            draggable: false,
-            fade: true,
-            asNavFor: '#slick-2, #slick-3',
-          });
-    
-          $('#slick-2').slick({
-            accessibility: false,
             arrows: false,
             draggable: false,
             fade: true,
@@ -180,6 +166,17 @@
             arrows: false,
             draggable: false,
             fade: true,
+          });
+
+          $('#slick-2').slick({
+            accessibility: false,
+            arrows: false,
+            autoplay: true,
+            autoplaySpeed: 8000,
+            draggable: false,
+            fade: true,
+            dots: true,
+            asNavFor: '#slick-1, #slick-3',
           });
         });
       </script>
