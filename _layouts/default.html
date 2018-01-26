@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>USA Restaurant Services</title>
+
+  <link rel="stylesheet" type="text/css" href="/assets/css/normalize.css" />
+  <link rel="stylesheet" type="text/css" href="/assets/slick/slick.css" />
+  <link rel="stylesheet" type="text/css" href="/assets/css/style.css" />
+
+  <script defer src="https://use.fontawesome.com/releases/v5.0.2/js/all.js"></script>
+</head>
+
+<body>
+  <nav>
+    <div class="container">
+      <a href="/">
+        <img class="nav-logo" src="/assets/img/gv-black.png" alt="USA Restaurant Services Logo" />
+      </a>
+      <div class="nav-items theme-textColor animate-color">
+        {% for link in site.navigation %}
+          {% assign current = nil %}
+          {% if page.url == link.url %}
+            {% assign current = "current" %}
+          {% endif %}
+
+          <a class="nav-link {{ current }} theme-textColor" href="{{ link.url }}">{{ link.text }}</a>
+        {% endfor %}
+      </div>
+    </div>
+  </nav>
+  {{ content }}
+  <footer>
+    <div class="container">
+      <div class="row">
+        <div class="col-12 col-md-3 col-lg-2">
+          <div class="footer-item footer-item--social">
+            <a class="theme-colorHover" href="https://medium.com/@usarestaurant">
+              <i class="footer-icon fab fa-medium"></i>
+              <div class="footer-text">Blog</div>
+            </a>
+          </div>
+          <div class="footer-item footer-item--social">
+            <a class="theme-colorHover" href="https://www.facebook.com/USA-Restaurant-Services-740219966172011/">
+              <i class="footer-icon fab fa-facebook"></i>
+              <div class="footer-text">Facebook</div>
+            </a>
+          </div>
+        </div>
+        <div class="col-12 col-md-9">
+          <div class="footer-item">
+            Powered by
+            <a class="theme-colorHover" href="http://grupacity.com/" target="_BLANK">
+              Grupacity.
+            </a>
+          </div>
+          <div class="footer-item">
+            <i class="far fa-copyright"></i> 2017 USA Restaurant Suppliers. All rights reserved.
+          </div>
+        </div>
+      </div>
+    </div>
+  </footer>
+  <script src="/assets/js/jquery-3.2.1.min.js"></script>
+  <script src="/assets/slick/slick.min.js"></script>
+  <script src="/assets/js/velocity.min.js"></script>
+  <script src="/assets/js/velocity.ui.min.js"></script>
+  <script src="/assets/js/global.js"></script>
+  
+  {% if page.scripts %}
+    {% for script in page.scripts %}
+      <script src="{{ script }}"></script>
+    {% endfor %}
+  {% endif %}
+</body>
+
+</html>

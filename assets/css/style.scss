@@ -1,0 +1,52 @@
+---
+---
+
+@import 'https://fonts.googleapis.com/css?family=Montserrat:400,700|Open+Sans:400,700';
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Open Sans', sans-serif;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+.theme-textColor, .theme-colorHover, .theme-bgHover, .theme-fill, .button--themed .slick-dots button {
+  transition-duration: 0.2s;
+  transition-property: color opacity background-color;
+}
+
+.stagger, .stagger-children > * {
+  opacity: 0;
+}
+
+.button {
+  display: inline-block;
+  background: #999999;
+  border-radius: 4px;
+  padding: 0.6em 1em 0.4em 1em;
+
+  &.button--themed {
+    color: #ffffff;
+    opacity: 0.85;
+    background-color: #777777;
+  }
+}
+
+@import 'bootstrap-grid';
+@import 'nav';
+@import 'footer';
+@import 'headings';
+@import 'body';
+@import 'slash';
+@import 'themes';
+@import 'home';
+@import 'about';
+@import 'services';
+@import 'products';
+@import '404';

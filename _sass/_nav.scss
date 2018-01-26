@@ -1,0 +1,40 @@
+nav {
+  padding: 10px 0;
+  border-bottom: 1px solid rgba(black, 0.15);
+
+  .nav-logo {
+    display: inline-block;
+    width: 32.5px;
+    height: 20px;
+    margin-right: 0.8em;
+    margin-top: 20px;
+
+    @include media-breakpoint-up(md) {
+      width: 65px;
+      height: 40px;
+      margin-right: 2.5em;
+      margin-top: 10px;
+    }
+  }
+
+  .nav-items {
+    display: inline-block;
+    vertical-align: top;
+    transition-property: color;
+    transition-duration: 500ms;
+
+    .nav-link {
+      font-family: Montserrat;
+      display: inline-block;
+      font-size: 16px;
+      font-weight: 600;
+      padding: 20px 0 18px 2px;
+      padding-right: 0.8em;
+
+      @include media-breakpoint-up(md) {
+        font-size: 16px;
+        padding-right: 2.5em;
+      }
+    }
+  }
+}

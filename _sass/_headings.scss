@@ -1,0 +1,120 @@
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin: 0 0 0.5em 0;
+}
+
+%heading {
+  font-family: Montserrat;
+  font-weight: 700;
+  line-height: 1;
+  letter-spacing: -1px;
+}
+
+h1 {
+  @extend %heading;
+  font-size: 48px;
+
+  @include media-breakpoint-up(md) {
+    font-size: 56px;
+  }
+
+  @include media-breakpoint-up(lg) {
+    font-size: 72px;
+  }
+}
+
+h2 {
+  @extend %heading;
+  font-size: 28px;
+
+  @include media-breakpoint-up(md) {
+    font-size: 48px;
+  }
+
+  @include media-breakpoint-up(lg) {
+    font-size: 56px;
+  }
+}
+
+h3 {
+  @extend %heading;
+  font-size: 24px;
+
+  @include media-breakpoint-up(md) {
+    font-size: 28px;
+  }
+
+  @include media-breakpoint-up(lg) {
+    font-size: 48px;
+  }
+}
+
+h4 {
+  @extend %heading;
+  font-size: 18px;
+
+  @include media-breakpoint-up(md) {
+    font-size: 24px;
+  }
+
+  @include media-breakpoint-up(lg) {
+    font-size: 28px;
+  }
+}
+
+h5 {
+  @extend %heading;
+  font-size: 18px;
+
+  @include media-breakpoint-up(md) {
+    font-size: 18px;
+  }
+
+  @include media-breakpoint-up(lg) {
+    font-size: 24px;
+  }
+}
+
+h6 {
+  @extend %heading;
+  font-size: 18px;
+
+  @include media-breakpoint-up(md) {
+    font-size: 18px;
+  }
+
+  @include media-breakpoint-up(lg) {
+    font-size: 18px;
+  }
+}
+
+.header-text {
+  margin-top: 40px;
+  margin-bottom: 40px;
+
+  @include media-breakpoint-up(md) {
+    margin-top: 60px;
+  }
+
+  @include media-breakpoint-up(lg) {
+    margin-top: 180px;
+  }
+
+  @include media-breakpoint-up(xl) {
+    &:not(.less) {
+      margin-top: 280px;
+    }
+  }
+}
+
+.header-headline {
+  margin: 0;
+}
+
+.header-about {
+  margin-bottom: 30px;
+}

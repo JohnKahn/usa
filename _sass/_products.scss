@@ -1,0 +1,62 @@
+.products {
+  .products-list {
+    margin-top: 65px;
+    padding-top: 30px;
+    border-top: 1px solid rgba(black, 0.15);
+  }
+
+  .products-header {
+    @include media-breakpoint-up(lg) {
+      margin-top: 60px;
+    }
+
+    @include media-breakpoint-up(xl) {
+      margin-top: 120px;
+    }
+  }
+
+  .products-message {
+    margin-top: 40px;
+
+    .products-title {
+      margin: 0 60px 0 0;
+      font-weight: 700;
+
+      @include media-breakpoint-up(md) {
+        margin-right: 0;
+      }
+    }
+
+    .products-paragraph {
+      margin: 2em 0;
+    }
+
+    .products-byline {
+      zoom: 1;
+
+      .products-bylineImage {
+        width: 50px;
+        border-radius: 50%;
+        float: left;
+      }
+
+      .products-bylineText {
+        margin-left: 70px;
+        padding-top: 2px;
+
+        &.noImage {
+          margin-left: 0;
+        }
+
+        .products-bylineName {
+          margin: 3px 0 0 0;
+          letter-spacing: 0;
+        }
+
+        .products-bylineTitle {
+          margin: 0;
+        }
+      }
+    }
+  }
+}

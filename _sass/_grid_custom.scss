@@ -1,0 +1,38 @@
+.grid {
+  padding: 0 15px;
+  margin: 0 auto;
+
+  @include medium {
+    width: 720px;
+  }
+
+  @include large {
+    width: 960px;
+  }
+
+  @include xlarge {
+    width: 1120px;
+  }
+}
+
+.grid--fullWidth {
+  padding: 0;
+}
+
+.row {
+  zoom: 1;
+  position: relative;
+  margin: 0 -15px;
+}
+
+@for $i from 1 through 12 {
+  $width: $i/12 * 100%;
+
+  .col-#{$i} {
+    position: relative;
+    padding: 0 15px;
+    float: left;
+    border: 1px solid red;
+    width: $width;
+  }
+}

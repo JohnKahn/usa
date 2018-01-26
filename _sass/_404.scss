@@ -1,0 +1,10 @@
+.p404 {
+  .header-headline--404 {
+    color: #eee;
+    font-size: 72px;
+
+    @include media-breakpoint-up(md) {
+      font-size: 180px;
+    }
+  }
+}

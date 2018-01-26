@@ -1,0 +1,51 @@
+---
+layout: default
+scripts:
+  - /assets/js/about-us.js
+---
+
+<main class="about container">
+  <div class="row">
+    <div class="col-12 col-md-6">
+      <div class="header-text less stagger-children">
+        <h2 class="header-headline">About Us</h2>
+        <p>Founded as Rudolph Enterprises in 2003, USA Restaurant Services is redefining what it means to be a restaurant services
+          provider. With our fixed-prices, reduced repair rates, and cutting edge technologies, we have achieved an unprecedented
+          98% approval rating while managing over 145 restaurants doing $190 million in annual revenue.</p>
+        <p>
+          In August of 2017, USA Restaurant Services merged with USA Restaurant Suppliers, one of the fastest growing used restaurant
+          suppliers in the industry in order to provide customers the simplest and most efficient way to renovate or build
+          new restaurants. We’ve built a team of industry leading repair technicians, developers, and client-relationship
+          experts who work together to provide restaurant's exceptional support on their road to success.</p>
+      </div>
+    </div>
+    <div class="col-12 col-md-6">
+      <div class="header-text less">
+        <h3 class="stagger">Contact Us</h3>
+        <h4 class="theme-textColor stagger">(469) 909 - 0717</h4>
+        <h4 class="theme-textColor stagger">
+          <div>6115 Owens Street,</div>
+          <div>Dallas, TX, 75235</div>
+        </h4>
+      </div>
+    </div>
+  </div>
+  <section class="row team-list">
+    {% for member in site.team %}
+      <div class="col-12 col-md-6 {% unless member.half %}col-lg-4{% endunless %} stagger">
+        <div class="bioCard">
+          <div class="bioCard-portrait">
+            <img class="bioCard-image" src="{{ member.image }}" alt="Photo of {{ member.name }}" />
+          </div>
+          <div class="bioCard-text {% unless member.bio %}noBio{% endunless %}">
+            <h5 class="bioCard-name theme-textColor">{{ member.name }}</h5>
+            {% if member.title %}
+              <div class="bioCard-title">{{ member.title }}</div>
+            {% endif %}
+            <div class="bioCard-bio">{{ member.bio }}</div>
+          </div>
+        </div>
+      </div>
+    {% endfor %}
+  </section>
+</main>

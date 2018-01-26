@@ -1,0 +1,54 @@
+.home {
+  .home-partners {
+    margin-top: 65px;
+    padding-top: 30px;
+    border-top: 1px solid rgba(black, 0.15);
+  }
+
+  .home-message {
+    margin-top: 40px;
+
+    .home-title {
+      margin: 0 60px 0 0;
+      font-weight: 700;
+
+      @include media-breakpoint-up(md) {
+        margin-right: 0;
+      }
+    }
+
+    .home-paragraph {
+      margin: 2em 0;
+    }
+
+    .home-byline {
+      zoom: 1;
+
+      .home-bylineImage {
+        width: 50px;
+        border-radius: 50%;
+        float: left;
+      }
+
+      .home-bylineText {
+        margin-left: 70px;
+        padding-top: 2px;
+
+        &.noImage {
+          margin-left: 0;
+        }
+
+        .home-bylineName {
+          margin: 3px 0 0 0;
+          letter-spacing: 0;
+        }
+
+        .home-bylineTitle {
+          margin: 0;
+        }
+      }
+    }
+  }
+}
+
+@import 'slick';

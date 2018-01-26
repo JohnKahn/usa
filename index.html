@@ -1,0 +1,69 @@
+---
+layout: default
+scripts:
+  - /assets/js/home.js
+---
+
+<main class="home">
+  <section class="container">
+    <div class="row">
+      <div class="col-12 col-md-6">
+        <div class="home-carousel stagger">
+          {% for message in site.homeMessages %}
+          <div data-color="{{ message.color }}" data-id="{{ message.dataId }}" class="home-message">
+            <h2 class="home-title">We provide businesses
+              <span class="theme-textColor">{{ message.title }}</span>
+            </h2>
+            <p class="home-paragraph">{{ message.paragraph }}</p>
+            <a class="home-byline">
+              {% assign noImage = true %}
+              {% if message.byline.image %}
+                <img class="home-bylineImage" src="{{ message.byline.image }}" />
+              {% endif %}
+              <div class="home-bylineText {% if noImage %}noImage{% endif %}">
+                <h5 class="home-bylineName">{{ message.byline.name }}</h5>
+                <p class="home-bylineTitle">{{ message.byline.title }}</p>
+              </div>
+            </a>
+          </div>
+          {% endfor %}
+        </div>
+      </div>
+      <div class="col-md-6">
+        <div class="slash-graphic pointer">
+          {% for message in site.homeMessages %}
+            <div class="slash-graphic-slide {% if forloop.first %}active{% endif %}" data-id="{{ message.dataId }}">
+              <img class="slash-graphic-image" src="{{ message.slash.image }}" alt="Decorative graphic" />
+            </div>
+          {% endfor %}
+          <svg class="slash-graphic-slash" viewBox="0 0 520 820" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" style="transform: translate(-0.768705px, 9.7164px);">
+				    <g stroke="none" stroke-width="1" fill="none">
+				        <g class="slashGraphic-slashPath theme-fill" fill="transparent">
+				            <path d="M507.714566,10 L365.319492,324.383974 L330.631139,401.062993 L153.485989,792.125985 L147.560577,805.130747 L141.696887,792.125985 L63,618.279315 L126.698186,477.742011 L161.38654,401.062993 L338.531689,10 L507.714566,10"></path>
+				        </g>
+				    </g>
+				  </svg>
+        </div>
+      </div>
+    </div>
+  </section>
+  <section class="container">
+    <div class="row home-partners">
+      <div class="col-12 col-md-6">
+        <div class="home-message stagger">
+          <h4 class="home-title">Our story</h4>
+          <p class="home-paragraph">
+            Launched as Google Ventures in 2009, GV is the venture capital arm of Alphabet, Inc. We’ve invested in more than 300 companies
+            that push the edge of what’s possible. In the fields of life science, healthcare, artificial intelligence, robotics,
+            transportation, cyber security, and agriculture, our companies aim to improve lives and change industries.
+          </p>
+          <p class="home-paragraph">
+            We’ve built a team of world-class engineers, designers, physicians, scientists, marketers, and investors who work together
+            to provide these startups exceptional support on the road to success. We help our companies interface with Google,
+            providing unique access to the world’s best technology and talent.
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
+</main>
