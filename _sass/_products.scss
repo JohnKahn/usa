@@ -1,6 +1,6 @@
 .products {
   .products-list {
-    margin-top: 65px;
+    margin-top: 140px;
     padding-top: 30px;
     border-top: 1px solid rgba(black, 0.15);
   }
@@ -57,6 +57,18 @@
           margin: 0;
         }
       }
+    }
+  }
+
+  .product {
+    .product-name {
+      text-align: center;
+    }
+
+    .product-image {
+      width: 100%;
+      padding: 40px;
+      padding-bottom: 0;
     }
   }
 }

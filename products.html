@@ -13,7 +13,11 @@ scripts:
             <h2 class="products-title">Products
               <span class="theme-textColor">{{ message.title }}</span>
             </h2>
-            <p class="products-">We supply professionally tested and cleaned pre-owned commercial equipment. If you are interested in saving money while still having incredible equipment please give us a call or  to best understand your needs</p>
+            <p class="products-">
+              We supply professionally tested and cleaned pre-owned commercial equipment.
+              If you are interested in saving money while still having incredible equipment
+              please give us a call or  to best understand your needs
+            </p>
             <p class="products-paragraph">
               Interested in our products?
             </p>
@@ -43,10 +47,15 @@ scripts:
     </div>
   </section>
   <section class="container">
-    <div class="row products-list">
-      <div class="col-12 col-md-6">
-        <div class="products-message stagger">
-          
+    <div class="products-list">
+      <div class="products-message stagger">
+        <div class="row">
+          {% for product in site.products %}
+            <div class="product col-12 col-md-4">
+              <img class="product-image" src="{{ product.image }}" />
+              <p class="product-name">{{ product.name }}</p>
+            </div>
+          {% endfor %}
         </div>
       </div>
     </div>
