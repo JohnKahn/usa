@@ -101,6 +101,7 @@ var hoverBg = 'rgba(158, 158, 158, 0.2)';
 function updateThemeClasses() {
   $('.theme-textColor').css('color', themeColor);
   $('.theme-fill').css('fill', themeColor);
+  $('.button--themed').css('background-color', themeColor);
 }
 function hexToRGB(hex, alpha) {
   var r, g, b;
