@@ -39,6 +39,20 @@ a {
   }
 }
 
+.vis-hidden {
+  visibility: hidden;
+}
+
+.v-center-wrapper {
+  position: relative;
+  .v-center {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+}
+
 @import 'bootstrap-grid';
 @import 'nav';
 @import 'footer';

@@ -1,6 +1,6 @@
 .home {
   .home-partners {
-    margin-top: 65px;
+    margin-top: 100px;
     padding-top: 30px;
     border-top: 1px solid rgba(black, 0.15);
   }
@@ -47,6 +47,17 @@
           margin: 0;
         }
       }
+    }
+  }
+
+  .inquiry {
+    margin-top: 50px;
+
+    a {
+      margin-top: 20px;
+      max-width: 80%;
+      width: 150px;
+      text-align: center;
     }
   }
 }
