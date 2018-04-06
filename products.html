@@ -4,6 +4,7 @@ scripts:
   - /assets/js/products.js
 ---
 
+{% include base.html %}
 <main class="products">
   <section class="container">
     <div class="row">
@@ -31,7 +32,7 @@ scripts:
       <div class="col-md-6">
         <div class="slash-graphic pointer">
           <div class="slash-graphic-slide active">
-            <img class="slash-graphic-image" src="/assets/img/oven.png" alt="Decorative graphic" />
+            <img class="slash-graphic-image" src="{{base}}/assets/img/oven.png" alt="Decorative graphic" />
           </div>
           <svg class="slash-graphic-slash" viewBox="0 0 520 820" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" style="transform: translate(-0.768705px, 9.7164px);">
 				    <g stroke="none" stroke-width="1" fill="none">
@@ -51,7 +52,7 @@ scripts:
         <div class="row stagger-children">
           {% for product in site.products %}
             <div class="product col-12 col-md-4">
-              <img class="product-image" src="{{ product.image }}" />
+              <img class="product-image" src="{{base}}{{ product.image }}" />
               <p class="product-name">{{ product.name }}</p>
             </div>
           {% endfor %}
