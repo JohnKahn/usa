@@ -18,7 +18,7 @@ scripts:
             <a class="home-byline">
               {% assign noImage = true %}
               {% if message.byline.image %}
-                <img class="home-bylineImage" src="{{ message.byline.image }}" />
+                <img class="home-bylineImage" src="{{base}}{{ message.byline.image }}" />
               {% endif %}
               <div class="home-bylineText {% if noImage %}noImage{% endif %}">
                 <h5 class="home-bylineName">{{ message.byline.name }}</h5>
@@ -33,7 +33,7 @@ scripts:
         <div class="slash-graphic pointer">
           {% for message in site.homeMessages %}
             <div class="slash-graphic-slide {% if forloop.first %}active{% endif %}" data-id="{{ message.dataId }}">
-              <img class="slash-graphic-image" src="{{ message.slash.image }}" alt="Decorative graphic" />
+              <img class="slash-graphic-image" src="{{base}}{{ message.slash.image }}" alt="Decorative graphic" />
             </div>
           {% endfor %}
           <svg class="slash-graphic-slash" viewBox="0 0 520 820" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" style="transform: translate(-0.768705px, 9.7164px);">
@@ -52,20 +52,20 @@ scripts:
       <h5>Our Partners</h5>
       <div class="row stagger-children">
         <div class="col-6 col-md-3 v-center-wrapper">
-          <img class="v-center" src="/assets/img/partners/pizza-hut.jpg" />
-          <img class="vis-hidden" src="/assets/img/partners/pizza-hut.jpg" />
+          <img class="v-center" src="{{base}}/assets/img/partners/pizza-hut.jpg" />
+          <img class="vis-hidden" src="{{base}}/assets/img/partners/pizza-hut.jpg" />
         </div>
         <div class="col-6 col-md-3 v-center-wrapper">
-          <img class="v-center" src="/assets/img/partners/kfc.png" />
-          <img class="vis-hidden" src="/assets/img/partners/kfc.png" />
+          <img class="v-center" src="{{base}}/assets/img/partners/kfc.png" />
+          <img class="vis-hidden" src="{{base}}/assets/img/partners/kfc.png" />
         </div>
         <div class="col-6 col-md-3 v-center-wrapper">
-          <img class="v-center" src="/assets/img/partners/dominos.png" />
-          <img class="vis-hidden" src="/assets/img/partners/dominos.png" />
+          <img class="v-center" src="{{base}}/assets/img/partners/dominos.png" />
+          <img class="vis-hidden" src="{{base}}/assets/img/partners/dominos.png" />
         </div>
         <div class="col-6 col-md-3 v-center-wrapper">
-          <img class="v-center" src="/assets/img/partners/taco-bell.jpg" />
-          <img class="vis-hidden" src="/assets/img/partners/taco-bell.jpg" />
+          <img class="v-center" src="{{base}}/assets/img/partners/taco-bell.jpg" />
+          <img class="vis-hidden" src="{{base}}/assets/img/partners/taco-bell.jpg" />
         </div>
       </div>
     </div>
