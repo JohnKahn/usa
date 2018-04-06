@@ -4,6 +4,7 @@ scripts:
   - /assets/js/services.js
 ---
 
+{% include base.html %}
 <main class="services container">
   <div class="row">
     <div class="col-12 col-md-5">
@@ -35,7 +36,7 @@ scripts:
     <div class="col-12 col-md-6 col-md-offset-1">
       <div class="slash-graphic pointer">
         <div class="slash-graphic-slide active">
-          <img class="slash-graphic-image" src="/assets/img/toolbox.png" alt="Decorative graphic" />
+          <img class="slash-graphic-image" src="{{base}}/assets/img/toolbox.png" alt="Decorative graphic" />
         </div>
         <svg class="slash-graphic-slash" viewBox="0 0 520 820" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" style="transform: translate(-0.768705px, 9.7164px);">
           <g stroke="none" stroke-width="1" fill="none">
