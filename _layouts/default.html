@@ -2,14 +2,15 @@
 <html lang="en">
 
 <head>
+  {% include base.html %}
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <title>USA Restaurant Services</title>
 
-  <link rel="stylesheet" type="text/css" href="/assets/css/normalize.css" />
-  <link rel="stylesheet" type="text/css" href="/assets/slick/slick.css" />
-  <link rel="stylesheet" type="text/css" href="/assets/css/style.css" />
+  <link rel="stylesheet" type="text/css" href="{{base}}/assets/css/normalize.css" />
+  <link rel="stylesheet" type="text/css" href="{{base}}/assets/slick/slick.css" />
+  <link rel="stylesheet" type="text/css" href="{{base}}/assets/css/style.css" />
 
   <script defer src="https://use.fontawesome.com/releases/v5.0.2/js/all.js"></script>
 </head>
@@ -17,7 +18,7 @@
 <body>
   <nav>
     <div class="container">
-      <a href="/">
+      <a href="{{base}}">
         <!-- <img class="nav-logo" src="/assets/img/gv-black.png" alt="USA Restaurant Services Logo" /> -->
         <h6 class="nav-logo">USA Restaurant Services</h6>
       </a>
@@ -28,7 +29,7 @@
             {% assign current = "current" %}
           {% endif %}
 
-          <a class="nav-link {{ current }} theme-textColor" href="{{ link.url }}">{{ link.text }}</a>
+          <a class="nav-link {{ current }} theme-textColor" href="{{base}}{{ link.url }}">{{ link.text }}</a>
         {% endfor %}
       </div>
     </div>
